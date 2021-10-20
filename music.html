@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bootstrap Example</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="main_div">
+            <div class="music_container">
+                <h2 id="title">song1</h2>
+                <h3 id="artist">Artist1</h3>
+                <div class="img_container">
+                    <img src="images/img1.jpg" alt="">
+                </div>
+                <audio src="music/play1.mp3" controls class="d-none"></audio>
+
+                <!-- Progress Bar -->
+                <div class="progressbar_container" id="progress_container">
+                    <div class="progress_duration_meter">
+                        <div id="current_time">0:00</div>
+                        <div id="duration">2:22</div>
+                    </div>
+                    <div class="progress_div" id="progress_div">
+                        <div class="progress" id="progress"></div>
+                    </div>
+                </div>
+
+                <!-- music controls -->
+                <div class="music_controls">
+                    <i class="fas fa-backward" id="prev" title="Previous"></i>
+                    <i class="fas fa-play main_button" id="play" title="Play"></i>
+                    <i class="fas fa-forward" id="next" title="Next"></i>
+                </div>
+            </div>
+        </div>
+        <script src="js/style.js"></script>
+    </body>
+</html> 
